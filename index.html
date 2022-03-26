@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <title>Title</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+      <div class="container">
+            <h4 class="alert alert-success">User tạo 1 mảng dãy số</h4>
+            <div class="form-group">
+                  <label for="">Nhập vào 1 số:(Nhập nhiều lần sẽ tạo được mảng có nhiều số)</label>
+                  <input type="number" class="form-control" id="input_arr" placeholder="ví dụ: -11.32314">
+            </div>
+            <button class="btn btn-primary" id="btn_arr">Tạo mảng</button>
+            <span>Mảng được tạo là:</span> <span class="output_arr alert alert-info"></span>
+
+            <div class="bai1 mt-3">
+                  <h5 class="alert alert-success">Câu 1: tính tổng số dương có trong mảng</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai1 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai2 mt-3">
+                  <h5 class="alert alert-success">Câu 2: Đếm các số dương có trong mảng</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai2 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai3 mt-3">
+                  <h5 class="alert alert-success">Câu 3: Tìm số nhỏ nhất trong mảng</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai3 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai4 mt-3">
+                  <h5 class="alert alert-success">Câu 4: Tìm số dương nhỏ nhất trong mảng</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai4 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai5 mt-3">
+                  <h5 class="alert alert-success">Câu 5: Tìm số số chẵn cuối cùng trong mảng(nếu không có thì trả về -1)
+                  </h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai5 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai6 mt-3">
+                  <h5 class="alert alert-success">Câu 6: Đổi thứ tự 2 số trong mảng</h5>
+                  <form class="form-inline mb-3">
+                        <div class="form-group">
+                              <label class="mr-2">Vị trí đổi đầu tiên:</label>
+                              <input type="number" id="vitri1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                              <label class="mr-2">Vị trí đổi thứ 2:</label>
+                              <input type="number" id="vitri2" class="form-control">
+                        </div>
+                  </form>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai6 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai7 mt-3">
+                  <h5 class="alert alert-success">Câu 7: Sắp xếp mảng theo thứ tự tăng dần</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai6 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai8 mt-3">
+                  <h5 class="alert alert-success">Câu 8: Tìm số nguyên tố đầu tiên trong mảng</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai6 alert alert-info ml-2"></span>
+            </div>
+            <div class="bai9 mt-3">
+                  <h5 class="alert alert-success">Câu 9: Nhập thêm mảng số thực, tìm xem trong mảng có bao nhiêu số
+                        nguyên?</h5>
+
+                  <form class="form-inline mb-3">
+                        <div class="form-group">
+                              <label for="add_real_number" class="mr-3">Thêm số thực:</label>
+                              <input type="text" id="add_real_number" class="form-control">
+                              <button class=" them btn btn-success ml-3">Thêm</button>
+                        </div>
+                  </form>
+                  <span class="arr_real_number mb-3"></span> <br>
+                  <br>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai6 alert alert-info ml-2"></span>
+            </div>
+
+            <div class="bai10 mt-3">
+                  <h5 class="alert alert-success">Câu 10: so sánh số lượng số âm và số dương</h5>
+                  <button class="btn btn-warning">kết quả</button>
+                  <span class="output_bai6 alert alert-info ml-2"></span>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                  crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                  crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                  crossorigin="anonymous"></script>
+            <script src="./main.js"></script>
+</body>
+
+</html>
