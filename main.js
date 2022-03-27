@@ -105,12 +105,19 @@ document.querySelector(".bai6 .btn").addEventListener("click", () => {
     output_arr.join(", ");
 });
 //sắp xếp mảng theo thứ tự tăng dần
-document.querySelector(".bai7 .btn").onclick = () => {
+document.querySelector(".bai7 .btn").addEventListener("click", () => {
   let clone_output_arr = [...output_arr];
-  clone_output_arr.sort((a, b) => a - b);
-  document.querySelector(".bai7 .output_bai6").innerHTML =
-    clone_output_arr.join(", ");
-};
+  for (a = 0; a < clone_output_arr.length - 1; a++) {
+    for (b = a + 1; b < clone_output_arr.length; b++) {
+      if (clone_output_arr[a] > clone_output_arr[b]) {
+        let temp = clone_output_arr[a];
+        clone_output_arr[a] = clone_output_arr[b];
+        clone_output_arr[b] = temp;
+      }
+    }
+  }
+  document.querySelector(".bai7 .output_bai6").innerHTML = clone_output_arr;
+});
 
 // Tìm số nguyên tố đầu tiên trong mảng
 let SoNguyenTo_firts = -1;
