@@ -168,7 +168,7 @@ function taoMangSoNguyenTo(input) {
   } else {
     for (let i = 3; i <= input; i += 2) {
       arrInput.push(i);
-      for (let a = 3; a <= Math.sqrt(i); a++) {
+      for (let a = 3; a <= Math.sqrt(i); a+=2) {
         if (i % a === 0) {
           arr_not_songuyento.push(i);
           break;
